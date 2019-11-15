@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Cole Bugley
+     cole_bugley@student.uml.edu
+     UMass Lowell Computer Science, course 4610-201 GUI Programming
+     Created On: 11/11/19
+     Last Updated On: 11/12/19
+     Description: This is the first example for javascript. It dynamcially produces
+     a multiplication table based on user inputs.
+     Copyright (c) 2019 by Cole J. Bugley. All rights reserved. May be freely
+     copied or excerpted for education purposes with credit to the author.
+ -->
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>HW6</title>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/hw6_styles.css">
+    </head>
+    <body>
+        <form onsubmit="process()">
+            Enter horizontal axis upper and lower limits. Order does not matter:
+            <br>
+            <input type="text" name="xFirstNumber" id="x_first_number">
+            <br>
+            <br>
+            <input type="text" name="xSecondNumber" id="x_second_number">
+            <br>
+            Enter vertical axis upper and lower limits. Order does not matter:
+            <br>
+            <input type="text" name="yFirstNumber" id="y_first_number">
+            <br>
+            <br>
+            <input type="text" name="ySecondNumber" id="y_second_number">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p id="error"></p>
+
+        <table id="table1" border=1></table>
+
+        <script src="java/hw6_script.js">
+        </script>
+    </body>
+</html>
